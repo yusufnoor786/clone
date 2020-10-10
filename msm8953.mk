@@ -1,4 +1,4 @@
-#
+
 # Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -116,110 +116,110 @@ PRODUCT_COPY_FILES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
- android.hardware.configstore@1.0-service
+^Iandroid.hardware.configstore@1.0-service
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
- SystemUI \
- NexusLauncherRelease
+^ISystemUI \
+^INexusLauncherRelease
 
 # Display
 PRODUCT_PACKAGES += \
- android.hardware.graphics.allocator@2.0-impl \
- android.hardware.graphics.allocator@2.0-service \
- android.hardware.graphics.composer@2.1-impl \
- android.hardware.graphics.composer@2.1-service \
- android.hardware.graphics.mapper@2.0-impl-2.1 \
- android.hardware.memtrack@1.0-impl \
- android.hardware.memtrack@1.0-service \
- copybit.msm8953 \
- gralloc.msm8953 \
- hwcomposer.msm8953 \
- memtrack.msm8953 \
- libdisplayconfig \
- liboverlay \
- libqdMetaData.system \
- libgenlock \
- libtinyxml
+^Iandroid.hardware.graphics.allocator@2.0-impl \
+^Iandroid.hardware.graphics.allocator@2.0-service \
+^Iandroid.hardware.graphics.composer@2.1-impl \
+^Iandroid.hardware.graphics.composer@2.1-service \
+^Iandroid.hardware.graphics.mapper@2.0-impl-2.1 \
+^Iandroid.hardware.memtrack@1.0-impl \
+^Iandroid.hardware.memtrack@1.0-service \
+^Icopybit.msm8953 \
+^Igralloc.msm8953 \
+^Ihwcomposer.msm8953 \
+^Imemtrack.msm8953 \
+^Ilibdisplayconfig \
+^Iliboverlay \
+^IlibqdMetaData.system \
+^Ilibgenlock \
+^Ilibtinyxml
 
 # Doze mode
 PRODUCT_PACKAGES += \
- XiaomiDoze
+^IXiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
- android.hardware.drm@1.0-impl \
- android.hardware.drm@1.0-service-lazy \
- android.hardware.drm@1.3-service-lazy.clearkey
+^Iandroid.hardware.drm@1.0-impl \
+^Iandroid.hardware.drm@1.0-service-lazy \
+^Iandroid.hardware.drm@1.3-service-lazy.clearkey
 
 # Ebtables
 PRODUCT_PACKAGES += \
- ebtables \
- ethertypes \
- libebtc
+^Iebtables \
+^Iethertypes \
+^Ilibebtc
 
 # FM
 PRODUCT_PACKAGES += \
- FMRadio \
- libfmjni
+^IFMRadio \
+^Ilibfmjni
 
 # GPS
 PRODUCT_PACKAGES += \
- libwifi-hal-ctrl
+^Ilibwifi-hal-ctrl
 
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
- $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
- $(LOCAL_PATH)/configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
- $(LOCAL_PATH)/configs/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
- $(LOCAL_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
- $(LOCAL_PATH)/configs/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
+^I$(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+^I$(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+^I$(LOCAL_PATH)/configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+^I$(LOCAL_PATH)/configs/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+^I$(LOCAL_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
+^I$(LOCAL_PATH)/configs/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
 # Healthd
 PRODUCT_PACKAGES += \
- chargeonlymode
+^Ichargeonlymode
 
 # HIDL
 PRODUCT_PACKAGES += \
- android.hidl.base@1.0 \
- android.hidl.manager@1.0
+^Iandroid.hidl.base@1.0 \
+^Iandroid.hidl.manager@1.0
 
 # HW crypto
 PRODUCT_PACKAGES += \
- vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+^Ivendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # IMS
 PRODUCT_PACKAGES += \
- ims-ext-common \
- ims_ext_common.xml
+^Iims-ext-common \
+^Iims_ext_common.xml
 
 # Input
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/keylayout/ft5435_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5435_ts.kl \
- $(LOCAL_PATH)/keylayout/gf3208.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gf3208.kl \
- $(LOCAL_PATH)/keylayout/goodix-ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix-ts.kl \
- $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
- $(LOCAL_PATH)/keylayout/ist30xx_ts_input.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ist30xx_ts_input.kl \
- $(LOCAL_PATH)/keylayout/msm8953-snd-card-mtp_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/msm8953-snd-card-mtp_Button_Jack.kl \
- $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl \
- $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
+^I$(LOCAL_PATH)/keylayout/ft5435_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5435_ts.kl \
+^I$(LOCAL_PATH)/keylayout/gf3208.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gf3208.kl \
+^I$(LOCAL_PATH)/keylayout/goodix-ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/goodix-ts.kl \
+^I$(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
+^I$(LOCAL_PATH)/keylayout/ist30xx_ts_input.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ist30xx_ts_input.kl \
+^I$(LOCAL_PATH)/keylayout/msm8953-snd-card-mtp_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/msm8953-snd-card-mtp_Button_Jack.kl \
+^I$(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl \
+^I$(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
 
 # IPA Manager
 PRODUCT_PACKAGES += \
- ipacm \
- IPACM_cfg.xml
+^Iipacm \
+^IIPACM_cfg.xml
 
 # IRQ
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+^I$(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # IRSC
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+^I$(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Lights
 PRODUCT_PACKAGES += \
- android.hardware.light@2.0-service.msm8953
+^Iandroid.hardware.light@2.0-service.msm8953
 
 # LiveDisplay
 # PRODUCT_PACKAGES += \
@@ -227,191 +227,171 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/configs/media_codecs.xml::$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
- $(LOCAL_PATH)/configs/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
- $(LOCAL_PATH)/configs/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+^I$(LOCAL_PATH)/configs/media_codecs.xml::$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+^I$(LOCAL_PATH)/configs/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+^I$(LOCAL_PATH)/configs/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 PRODUCT_COPY_FILES += \
-<<<<<<< HEAD
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
-=======
- frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
- frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
- frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
->>>>>>> 7c31d2571d0d5cf92c900fa81dca730f4e089aab
+^Iframeworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
+^Iframeworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
+^Iframeworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
 
-# Netutils
+
+#Netutils
 PRODUCT_PACKAGES += \
- netutils-wrapper-1.0 \
- android.system.net.netd@1.0 \
- libandroid_net
+^Inetutils-wrapper-1.0 \
+^Iandroid.system.net.netd@1.0 \
+^Ilibandroid_net
 
 # OMX
 PRODUCT_PACKAGES += \
- libc2dcolorconvert \
- libmm-omxcore \
- libOmxAacEnc \
- libOmxAmrEnc \
- libOmxCore \
- libOmxEvrcEnc \
- libOmxQcelp13Enc \
- libOmxSwVencHevc \
- libOmxVdec \
- libOmxVenc \
- libstagefrighthw
+^Ilibc2dcolorconvert \
+^Ilibmm-omxcore \
+^IlibOmxAacEnc \
+^IlibOmxAmrEnc \
+^IlibOmxCore \
+^IlibOmxEvrcEnc \
+^IlibOmxQcelp13Enc \
+^IlibOmxSwVencHevc \
+^IlibOmxVdec \
+^IlibOmxVenc \
+^Ilibstagefrighthw
 
 # Power
 PRODUCT_PACKAGES += \
- android.hardware.power-service-qti
+^Iandroid.hardware.power-service-qti
 
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+^I$(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Properties
 -include device/xiaomi/msm8953-common/prop.mk
 
 # QMI
 PRODUCT_PACKAGES += \
- libjson
+^Ilibjson
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
-    fstab.qcom \
-    init.msm.usb.configfs.rc \
-    init.qcom.rc \
-    init.qcom.sh \
-    init.qcom.usb.rc \
-    init.safailnet.rc \
-    init.target.rc \
-    ueventd.qcom.rc
-=======
- fstab.qcom \
- init.msm.usb.configfs.rc \
- init.qcom.rc \
- init.qcom.sh \
- init.qcom.usb.rc \
- init.target.rc \
- ueventd.qcom.rc
->>>>>>> 7c31d2571d0d5cf92c900fa81dca730f4e089aab
+^Ifstab.qcom \
+^Iinit.msm.usb.configfs.rc \
+^Iinit.qcom.rc \
+^Iinit.qcom.sh \
+^Iinit.qcom.usb.rc \
+^Iinit.safailnet.rc \
+^Iinit.target.rc \
+^Iueventd.qcom.rc
+
 
 PRODUCT_PACKAGES += \
- init.qcom.bt.sh \
- init.qcom.post_boot.sh \
- move_time_data.sh \
- move_wifi_data.sh
+^Iinit.qcom.bt.sh \
+^Iinit.qcom.post_boot.sh \
+^Imove_time_data.sh \
+^Imove_wifi_data.sh
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
- android.hardware.renderscript@1.0-impl
+^Iandroid.hardware.renderscript@1.0-impl
 
 # RIL
 PRODUCT_PACKAGES += \
- android.hardware.radio@1.2 \
- android.hardware.radio@1.3 \
- android.hardware.radio@1.4 \
- android.hardware.radio.config@1.0 \
- android.hardware.radio.config@1.1 \
- android.hardware.radio.config@1.2 \
- android.hardware.secure_element@1.0 \
- librmnetctl \
- libcnefeatureconfig \
- libxml2 \
- qti-telephony-hidl-wrapper \
- qti_telephony_hidl_wrapper.xml \
- qti-telephony-utils \
- qti_telephony_utils.xml 
- 
+^Iandroid.hardware.radio@1.2 \
+^Iandroid.hardware.radio@1.3 \
+^Iandroid.hardware.radio@1.4 \
+^Iandroid.hardware.radio.config@1.0 \
+^Iandroid.hardware.radio.config@1.1 \
+^Iandroid.hardware.radio.config@1.2 \
+^Iandroid.hardware.secure_element@1.0 \
+^Ilibrmnetctl \
+^Ilibcnefeatureconfig \
+^Ilibxml2 \
+^Iqti-telephony-hidl-wrapper \
+^Iqti_telephony_hidl_wrapper.xml \
+^Iqti-telephony-utils \
+^Iqti_telephony_utils.xml 
 
 
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
+^I$(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
 # Sensors
 PRODUCT_PACKAGES += \
- android.hardware.sensors@1.0-impl \
- android.hardware.sensors@1.0-service \
- libsensorndkbridge
+^Iandroid.hardware.sensors@1.0-impl \
+^Iandroid.hardware.sensors@1.0-service \
+^Ilibsensorndkbridge
 
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+^I$(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
- textclassifier.bundle1
+^Itextclassifier.bundle1
 
 # Thermal
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+^I$(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Trust HAL
 # PRODUCT_PACKAGES += \
- #   vendor.lineage.trust@1.0-service
+^I#   vendor.lineage.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \
- android.hardware.usb@1.0-service.basic
+^Iandroid.hardware.usb@1.0-service.basic
 
 
 # VNDK
 PRODUCT_PACKAGES += \
- vndk-sp
- #prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-full 
- #prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-lite.so 
- #prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full.so 
- #prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite.so
-
+    vndk-sp
 
 # Thermal
 PRODUCT_PACKAGES += \
- thermal.msm8953
+^Ithermal.msm8953
 
 PRODUCT_PACKAGES += \
- android.hardware.thermal@1.0-impl \
- android.hardware.thermal@1.0-service
+^Iandroid.hardware.thermal@1.0-impl \
+^Iandroid.hardware.thermal@1.0-service
 
 # Vibrator
 PRODUCT_PACKAGES += \
- android.hardware.vibrator@1.0-impl \
- android.hardware.vibrator@1.0-service
+^Iandroid.hardware.vibrator@1.0-impl \
+^Iandroid.hardware.vibrator@1.0-service
 
 # Whitelisted app
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
- $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
- $(LOCAL_PATH)/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml
+^I$(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
+^I$(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
+^I$(LOCAL_PATH)/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml
 
 # Wifi
 PRODUCT_PACKAGES += \
- android.hardware.wifi@1.0-service-lazy \
- libcld80211 \
- libqsap_sdk \
- libQWiFiSoftApCfg \
- libwpa_client \
- hostapd \
- dhcpcd.conf \
- wificond \
- wpa_supplicant \
- wpa_supplicant.conf
+^Iandroid.hardware.wifi@1.0-service-lazy \
+^Ilibcld80211 \
+^Ilibqsap_sdk \
+^IlibQWiFiSoftApCfg \
+^Ilibwpa_client \
+^Ihostapd \
+^Idhcpcd.conf \
+^Iwificond \
+^Iwpa_supplicant \
+^Iwpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
- $(LOCAL_PATH)/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny \
- $(LOCAL_PATH)/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
- $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
- $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+^I$(LOCAL_PATH)/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
+^I$(LOCAL_PATH)/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny \
+^I$(LOCAL_PATH)/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+^I$(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+^I$(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 PRODUCT_COPY_FILES += \
- $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
- $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+^I$(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+^I$(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Wi-Fi Display
 #PRODUCT_BOOT_JARS += \
- WfdCommon
+^IWfdCommon
 #XiaomiParts
- PRODUCT_PACKAGES += \
-     XiaomiParts
+^IPRODUCT_PACKAGES += \
+^IXiaomiParts
