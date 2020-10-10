@@ -185,7 +185,9 @@ endif
 
 # SELinux
 #include device/qcom/sepolicy/SEPolicy.mk
-BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+#BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy-minimal/vendor
+
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Wi-Fi
