@@ -181,12 +181,12 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-^Iandroid.hidl.base@1.0 \
-^Iandroid.hidl.manager@1.0
+  android.hidl.base@1.0 \
+  android.hidl.manager@1.0
 
 # HW crypto
 PRODUCT_PACKAGES += \
-^Ivendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+  vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # IMS
 PRODUCT_PACKAGES += \
