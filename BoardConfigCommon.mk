@@ -186,7 +186,7 @@ endif
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 #BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
-BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy-minimal/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/minimal-sepolicy/vendor
 
 SELINUX_IGNORE_NEVERALLOWS := true
 
