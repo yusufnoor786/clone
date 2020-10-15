@@ -45,6 +45,10 @@ qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd
 
+#Build Version
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.build.version.release=11
+
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.cne.feature=1 \
@@ -226,5 +230,4 @@ wifi.interface=wlan0
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.device_config.runtime_native.usap_pool_enabled=true
-#Build Version
-ro.build.version.release=11
+
