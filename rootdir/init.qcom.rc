@@ -586,7 +586,7 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/m
 
 on charger
     setprop persist.sys.usb.config mass_storage
-    load_system_props
+  
     start qcom-post-boot
 
 #Mixed HWC versions among targets
@@ -622,7 +622,7 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
 on property:dev.bootcomplete=1
     swapon_all /vendor/etc/fstab.qcom
 
-import /vendor/etc/init/hw/init.safailnet.rc
+
 
 # KCal
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
@@ -665,3 +665,4 @@ import /vendor/etc/init/hw/init.safailnet.rc
 # Sound
      chmod 0660 /sys/kernel/sound_control/earpiece_gain
      chmod 0660 /sys/kernel/sound_control/speaker_gain
+ import /vendor/etc/init/hw/init.safailnet.rc
