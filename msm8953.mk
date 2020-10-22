@@ -265,6 +265,10 @@ PRODUCT_PACKAGES += \
   libOmxVenc \
   libstagefrighthw
 
+#Protobuf
+PRODUCT_PACKAGES += \
+  libprotobuf-cpp-full-vendorcompat \
+  libprotobuf-cpp-lite-vendorcompat  
 # Power
 PRODUCT_PACKAGES += \
   android.hardware.power-service-qti
@@ -274,6 +278,10 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 -include device/xiaomi/msm8953-common/prop.mk
+
+# Public Libraries
+ PRODUCT_COPY_FILES += \
+   $(COMMON_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # QMI
 PRODUCT_PACKAGES += \
