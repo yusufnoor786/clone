@@ -175,6 +175,9 @@ PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
   $(LOCAL_PATH)/configs/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
+# health
+PRODUCT PACKAGES += \
+	android.hardware.health@2.1-service
 # Healthd
 PRODUCT_PACKAGES += \
   chargeonlymode
@@ -281,7 +284,7 @@ PRODUCT_COPY_FILES += \
 
 # Public Libraries
  PRODUCT_COPY_FILES += \
-   $(COMMON_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+   $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # QMI
 PRODUCT_PACKAGES += \
