@@ -187,8 +187,8 @@ else
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab.qcom
 endif
 
-# SELinux
-include device/qcom/sepolicy/SEPolicy.mk
+#SELinux
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
 SELINUX_IGNORE_NEVERALLOWS := true
 
