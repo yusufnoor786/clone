@@ -556,11 +556,7 @@
             <instance>imsrtpservice</instance>
         </interface>
     </hal>
-<<<<<<< HEAD
   
-=======
-    </manifest>
->>>>>>> 5ee17aa5b81b88a6500fd0b74613173aeceaac45
     <hal format="hidl">
         <name>vendor.qti.esepowermanager</name>
         <transport>hwbinder</transport>
@@ -571,7 +567,4 @@
 	</interface>
 	<fqname>@1.0::IEsePowerManager/default</fqname>
     </hal>
-<<<<<<< HEAD
  </manifest>
-=======
->>>>>>> 5ee17aa5b81b88a6500fd0b74613173aeceaac45
