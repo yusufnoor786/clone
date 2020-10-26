@@ -666,6 +666,9 @@ on property:dev.bootcomplete=1
      chmod 0660 /sys/kernel/sound_control/earpiece_gain
      chmod 0660 /sys/kernel/sound_control/speaker_gain
 
+#Starting perf properly
+    setprop vendor.post_boot.parsed 1
+
 service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
     class main
     user root
