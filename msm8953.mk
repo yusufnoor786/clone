@@ -277,7 +277,7 @@ PRODUCT_PACKAGES += \
   libprotobuf-cpp-lite-vendorcompat  
 # Power
 PRODUCT_PACKAGES += \
-  android.hardware.power-service-qti
+  android.hardware.power-service-qti \
   power.qcom \
   android.hardware.power@1.0-impl \
   android.hardware.power@1.0-service
