@@ -179,16 +179,16 @@ PRODUCT_COPY_FILES += \
 
 # health
 PRODUCT PACKAGES += \
-  android.hardware.health@2.0-impl \
-  android.hardware.health@2.0-service
+   android.hardware.health@2.1-impl \
+   android.hardware.health@2.1-service
 
 # HIDL
 PRODUCT_PACKAGES += \
-  android.hidl.base@1.0 \
-  android.hidl.manager@1.0
+   android.hidl.base@1.0 \
+   android.hidl.manager@1.0
 
 # HWBinder
- PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
    libhwbinder \
    libhwbinder.vendor
 
