@@ -99,7 +99,7 @@ PRODUCT_PACKAGES += \
 	tinymix
 
 # Audio configuration
-RODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/audio/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
 	$(LOCAL_PATH)/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
 	$(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -118,7 +118,7 @@ PRODUCT_COPY_FILES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
-^Iandroid.hardware.configstore@1.0-service
+   android.hardware.configstore@1.0-service
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -181,14 +181,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT PACKAGES += \
   android.hardware.health@2.0-impl \
   android.hardware.health@2.0-service
-# Healthd
-PRODUCT_PACKAGES += \
-  chargeonlymode
 
 # HIDL
 PRODUCT_PACKAGES += \
   android.hidl.base@1.0 \
   android.hidl.manager@1.0
+
 # HWBinder
  PRODUCT_PACKAGES += \
    libhwbinder \
@@ -198,6 +196,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    libhidltransport \
    libhidltransport.vendor
+
 # HW crypto
 PRODUCT_PACKAGES += \
   vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
