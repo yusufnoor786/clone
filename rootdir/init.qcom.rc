@@ -589,6 +589,9 @@ on charger
   
     start qcom-post-boot
 
+#Starting perf properly                                                         
+    setprop vendor.post_boot.parsed 1
+
 #Mixed HWC versions among targets
 on property:init.svc.surfaceflinger=restarting
     stop  vendor.hwcomposer-2-1
@@ -668,8 +671,6 @@ on property:dev.bootcomplete=1
      chmod 0660 /sys/kernel/sound_control/earpiece_gain
      chmod 0660 /sys/kernel/sound_control/speaker_gain
 
-#Starting perf properly
-    setprop vendor.post_boot.parsed 1
 
 service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
     class main
